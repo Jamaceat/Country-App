@@ -3,6 +3,28 @@
 <hr />
 
 <ul class="list-group">
-  <li routerLink="home" class="list-group-item">Home Page</li>
-  <li routerLink="about" class="list-group-item active">About Page</li>
+  <li
+    routerLink="home"
+    routerLinkActive="active py-4"
+    class="list-group-item btn btn-outline-light my-2"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    Home Page
+  </li>
+  <li
+    routerLink="about"
+    routerLinkActive="active py-4"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="list-group-item cursor-pointer btn my-2"
+  >
+    About Page
+  </li>
+  <li
+    routerLink="contact"
+    routerLinkActive="active py-4"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="list-group-item btn my-2"
+  >
+    Contact
+  </li>
 </ul>
