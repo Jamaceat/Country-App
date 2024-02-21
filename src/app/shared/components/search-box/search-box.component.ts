@@ -9,12 +9,10 @@ export class SearchBoxComponent {
   @Output()
   OnEnterEvent: EventEmitter<string> = new EventEmitter();
 
-  public onEnterPress(event: KeyboardEvent, value: string): void {
-    if (event.key === 'Enter') {
-      console.log('evento ' + event.key);
+  public onEnterPress(value: string): void {
+    console.log('evento enter');
 
-      this.OnEnterEvent.emit(value);
-    }
+    this.OnEnterEvent.emit(value);
   }
 
   @Input()
