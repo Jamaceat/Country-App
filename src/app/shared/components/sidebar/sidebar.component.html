@@ -3,7 +3,7 @@
 <hr />
 
 <ul class="list-group">
-  <li
+  <!-- <li
     routerLink="home"
     routerLinkActive="active py-4"
     class="list-group-item btn btn-outline-light my-2"
@@ -26,7 +26,7 @@
     class="list-group-item btn my-2"
   >
     Contact
-  </li>
+  </li> -->
   <li
     routerLink="countries"
     routerLinkActive="active py-4"
@@ -34,5 +34,29 @@
     class="list-group-item btn my-2"
   >
     Countries
+  </li>
+  <li
+    routerLink="countries/by-capital"
+    routerLinkActive="active py-4"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="list-group-item btn my-2"
+  >
+    Por Capital
+  </li>
+  <li
+    routerLink="countries/by-country"
+    routerLinkActive="active py-4"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="list-group-item btn my-2"
+  >
+    Por Pais
+  </li>
+  <li
+    routerLink="countries/by-region"
+    routerLinkActive="active py-4"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="list-group-item btn my-2"
+  >
+    Por region
   </li>
 </ul>

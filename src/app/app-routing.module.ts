@@ -13,7 +13,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./countries/countries.module').then((m) => m.CountriesModule),
   },
-  { path: '**', redirectTo: 'home' },
+  { path: '**', redirectTo: 'countries' },
 ];
 
 @NgModule({ imports: [RouterModule.forRoot(routes)], exports: [RouterModule] })
