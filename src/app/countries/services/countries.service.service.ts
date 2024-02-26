@@ -9,9 +9,10 @@ export class CountriesService {
   constructor(private httpClient: HttpClient) {}
 
   private getCountriesRequest(url: string): Observable<Country[]> {
-    return this.httpClient
-      .get<Country[]>(url)
-      .pipe(catchError((error) => of([])));
+    return this.httpClient.get<Country[]>(url).pipe(
+      catchError((error) => of([])),
+      delay(2000)
+    );
   }
 
   searchAlpha(query: string): Observable<Country | null> {
