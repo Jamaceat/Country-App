@@ -1,16 +1,16 @@
 {
   "files.exclude": {
-    ".vscode": true,
-    ".angular": true,
-    "node_modules": true,
-    ".editorconfig": true,
-    "tsconfig.json": true,
-    "tsconfig.app.json": true,
-    "README.md": true,
-    "package.json": true,
-    "package-lock.json": true,
-    "angular.json": true,
-    ".gitignore": true,
-    "tsconfig.spec.json": true
+    ".vscode": false,
+    ".angular": false,
+    "node_modules": false,
+    ".editorconfig": false,
+    "tsconfig.json": false,
+    "tsconfig.app.json": false,
+    "README.md": false,
+    "package.json": false,
+    "package-lock.json": false,
+    "angular.json": false,
+    ".gitignore": false,
+    "tsconfig.spec.json": false
   }
 }
