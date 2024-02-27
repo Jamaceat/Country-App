@@ -27,6 +27,9 @@ export class SearchBoxComponent implements OnInit, OnDestroy {
   @Input()
   public placeholder: string = '';
 
+  @Input()
+  public initialValue: string = '';
+
   public onEnterPress(value: string): void {
     console.log('evento enter');
 
