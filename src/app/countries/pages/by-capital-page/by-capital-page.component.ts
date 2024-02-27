@@ -8,15 +8,18 @@ import { Country } from '../../interfaces/Country.interface';
   styles: ``,
 })
 export class ByCapitalPageComponent {
-  constructor(private countryService: CountriesService) {}
-
+  public isLoading: boolean = false;
   public countries: Country[] = [];
 
+  constructor(private countryService: CountriesService) {}
+
   SearchByCapital(term: string): void {
+    this.isLoading = true;
     console.log('Desde ByCapitalPage');
     console.log({ term });
-    this.countryService
-      .searchCapital(term)
-      .subscribe((countries) => (this.countries = countries));
+    this.countryService.searchCapital(term).subscribe((countries) => {
+      this.countries = countries;
+      this.isLoading = false;
+    });
   }
 }
